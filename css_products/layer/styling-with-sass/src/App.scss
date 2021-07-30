@@ -1,0 +1,102 @@
+.lessor_review.type_documents {
+  position: relative;
+  .lessor_review_description{
+    position: absolute;
+    border: 1px solid #000;
+    &:first-child {
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 10;
+    }
+
+    &:nth-child(2) {
+      left: 20px;
+      top: 30px;
+      right: 20px;
+      z-index: 9;
+    }
+
+    &:nth-child(3) {
+      left: 40px;
+      top: 60px;
+      right: 40px;
+      z-index: 8;
+    }
+
+    &:not(:first-child) {
+        margin-top: 12px;
+    }
+    padding: 20px 48px 21px 19px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px 0 rgba(157, 179, 195, 0.2), 0 2px 8px 0 rgba(202, 211, 221, 0.08);
+  
+    .lessor_description_title {
+        display: inline-block;
+        padding: 21px 8px 19px 9px;
+        border-radius: 50%;
+        background-color: #979fa7;
+        color: #fff;
+        font-weight: bold;
+  
+     
+        &:not(:last-child) {
+            margin-right: 11px;
+        }
+    }
+  
+    .lessor_description_item {
+        display: inline-block;
+        vertical-align: top;
+        &:not(:first-child) {
+            margin-top: 6px;
+        }
+  
+        .lessor_item_title { 
+            &:not(:first-child) {
+                padding-top: 6px;
+            }
+  
+            display: inline-block;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.27px;
+            color: #222; 
+            font-weight: bold;
+        }
+  
+        .lessor_item_text {
+            line-height: 22px;
+            letter-spacing: -0.2px;
+            color: #555;
+        }
+    }
+  
+    .lessor_description_text {
+        display: block;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+        color: #8291ad;
+        
+        .lessor_description_emphasis {
+            position: relative;
+            font-weight: bold;
+            &::after {
+                content: "";
+                height: 7px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0.5;
+                mix-blend-mode: multiply;
+                background-color: #78ffe0;
+            }
+        }
+  
+        &:not(:first-child) {
+            margin-top: 13px;
+        }
+    }
+  }
+}
