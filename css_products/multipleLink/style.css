@@ -1,0 +1,33 @@
+.link_container {
+	position: relative;
+	padding: 20px;
+}
+
+.link_container .container_link {
+	display: flex;
+
+}
+
+.container_item {
+	position: relative;
+	text-decoration: none;
+	text-align:center;
+	width: 25%;
+	background-color: #222;
+	color: #fff;
+	border: 1px solid #e9e9e9;
+	z-index: 10;
+}
+
+.container_item:not(:first-child) {
+	margin-left: 20px;
+}
+
+.link_container .container_all_link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #08ddee;
+}
